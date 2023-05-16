@@ -14,6 +14,7 @@ export default App;
 
 const styles = {
   container: {
-    color: "orange",
+    color: "red",
+
   },
 };
