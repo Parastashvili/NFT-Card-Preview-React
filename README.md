@@ -1,70 +1,18 @@
-# Getting Started with Create React App
+App Component
+The App component represents the main component of the application. It renders a container that contains various sections and elements related to an NFT (Non-Fungible Token) item.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Description
+The App component is responsible for rendering the following sections and elements:
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+NFT Image: Displayed as a div element with the ID nftimg. This element is intended to show the image of the NFT.
+NFT Description: Consists of a div element with the class nft_dsc. It contains the following information about the NFT:
+NFT Name: Rendered as an h1 element with the class nft_name. It displays the name of the NFT, which in this case is "Equilibrium #3429".
+NFT About: Displayed as a p element with the class nft_about. It provides a brief description of the NFT, stating that the Equilibrium collection promotes balance and calm.
+Price and Time: Represented by a div element with the class priceandtime. This section contains two inner div elements with the class innerPriceandtime. Each inner div displays information about the price and time remaining for the NFT:
+Ethereum Icon and Price: Rendered as an img element with the ID ethereum and an h4 element with the class pricetxt. It displays the Ethereum icon and the price of the NFT, which is "0.041 ETH".
+Clock Icon and Time Remaining: Displayed as an img element with the ID clock and an h6 element with the class timeouttxt. It shows the clock icon and indicates the time remaining for the NFT, which is "3 days left".
+Creation Section: Comprises a div element with the class craetionSection. It contains the following details about the creator of the NFT:
+Creator Avatar: Rendered as an img element with the ID avatar. It displays the avatar or profile picture of the creator.
+Creation Description: Displayed as a p element with the class creation. It mentions the term "Creation of".
+Creator Name: Rendered as an h2 element with the class creationName. It displays the name of the creator, which in this case is "Jules Wyvern".
+Please note that the actual source code is not repeated in this description. Refer to the provided code snippet for the complete implementation details.
