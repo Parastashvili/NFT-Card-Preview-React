@@ -1,41 +1,149 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --BG-color: #0d192c;
+  --innerCont: #15263f;
+  --whiteTXT: #ffffff;
+  --lightTXT: #8bacd9;
+  --ethColor: #00fff8;
+  --borderbottom: #2e405a;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-.container {
-  background-color: blue;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--BG-color);
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.innerContainer {
+  width: 279px;
+  padding: 24px;
+  background-color: var(--innerCont);
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#nftimg {
+  position: relative;
+  width: 278px;
+  height: 278px;
+  border-radius: 8px;
+  background-size: cover;
+  background-image: url(./images/image-equilibrium.jpg);
+  cursor: pointer;
+}
+#nftimg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--ethColor);
+  mix-blend-mode: normal;
+  opacity: 0;
+  border-radius: 8px;
+  transition: opacity 0.3s;
+}
+#nftimg:hover::before {
+  opacity: 0.5;
+}
+#nftimg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+#nftimg:hover::after {
+  opacity: 1;
+}
+.nft_name {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: var(--whiteTXT);
+  margin: 24px 0 12px 0;
+  cursor: pointer;
+}
+.nft_name:hover {
+  color: var(--ethColor);
+}
+.nft_about {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--lightTXT);
+}
+.priceandtime {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+}
+.innerPriceandtime {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.pricetxt {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 19px;
+  color: var(--ethColor);
+}
+.timeouttxt {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: var(--lightTXT);
+}
+.nft_dsc {
+  border-bottom: 1px solid var(--borderbottom);
+}
+.craetionSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 16px;
+}
+#avatar {
+  border: 1px solid var(--whiteTXT);
+  border-radius: 50%;
+  width: 33px;
+}
+.creation {
+  margin: 0px 5px 0 16px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: var(--lightTXT);
+}
+.creationName {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: var(--whiteTXT);
+  cursor: pointer;
+}
+.creationName:hover {
+  color: var(--ethColor);
+}
+@media (min-width: 1440px) {
+  .innerContainer {
+    width: 302px;
   }
-  to {
-    transform: rotate(360deg);
+  #nftimg {
+    width: 302px;
+    height: 302px;
   }
 }
